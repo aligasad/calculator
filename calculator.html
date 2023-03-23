@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="https://kit.fontawesome.com/d300c1b491.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="calculators">
+        <form> 
+            <div class="header">
+                <div class="calc">Calculator</div>
+                <i class="fa-solid fa-calculator"></i>
+            </div>
+        <input type="text" class="screen" placeholder="00.000">
+        
+        </form>
+        <div class="buttons">
+            <button type="button" class="btn btn-yellow" onclick="abc('*')" data-num="*">*</button>
+            <button type="button" class="btn btn-yellow" onclick="abc('/')" data-num="/">/</button>
+            <button type="button" class="btn btn-yellow" onclick="abc('+')" data-num="+">+</button>
+            <button type="button" class="btn btn-yellow" onclick="abc('-')" data-num="-">-</button>
+
+            <button type="button" class="btn btn-gray" onclick="abc(0)" data-num="0">0</button>
+            <button type="button" class="btn btn-gray" onclick="abc(1)" data-num="1">1</button>
+            <button type="button" class="btn btn-gray" onclick="abc(2)" data-num="2">2</button>
+            <button type="button" class="btn btn-gray" onclick="abc(3)" data-num="3">3</button>
+            <button type="button" class="btn btn-gray" onclick="abc(4)" data-num="4">4</button>
+            <button type="button" class="btn btn-gray" onclick="abc(5)" data-num="5">5</button>
+            <button type="button" class="btn btn-gray" onclick="abc(6)" data-num="6">6</button>
+            <button type="button" class="btn btn-gray" onclick="abc(7)" data-num="7">7</button>
+            <button type="button" class="btn btn-gray" onclick="abc(8)" data-num="8">8</button>
+            <button type="button" class="btn btn-gray" onclick="abc(9)" data-num="9">9</button>
+
+            <button type="button" class="btn btn-equal" onclick="xyz('=')">=</button>
+            <button type="button" class="btn btn-clear" onclick="clr()">C</button>
+            <button type="button" class="btn btn-clear" onclick="pow()">x²</button>
+            <button type="button" class="btn btn-clear" onclick="pow(3)">x<sup>3</sup></button>
+            <button type="button" class="btn btn-clear" onclick="back()">X</button>
+        </div>
+        <div>
+            <h4 style="text-align: center; margin-bottom: 15px; font-family: 'Courgette', cursive;">
+               Created by Asad Alig
+            </h4>
+        </div>
+    </section>
+    <script src="calc.js"></script>
+</body>
+</html>
